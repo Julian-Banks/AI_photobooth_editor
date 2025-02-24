@@ -51,7 +51,7 @@ def download_edited_photo(img_url):
         img_data = BytesIO(response.content)
         pilImage = Image.open(img_data).convert("RGB")
         img_data = pygame.image.fromstring(pilImage.tobytes(), pilImage.size, pilImage.mode)
-        pygame.image.save(img_data, f'edited_image{current_time}.png')
+        pygame.image.save(img_data, f'edited_img/edited_image{current_time}.png')
         print('imaged saved')
         return img_data
     else:
@@ -84,10 +84,9 @@ try:
                 pygame.image.save(frame, 'image.png')
                 print("Photo saved as image.png")
                 current_time = time.strftime("%Y-%m-%d_%H-%M-%S")
-                pygame.image.save(frame, f'image{current_time}.png')
+                pygame.image.save(frame, f'img/image{current_time}.png')
                 #Call OPENAI API
                 response = get_edited_photo()
-                #response = "https://oaidalleapiprodscus.blob.core.windows.net/private/org-VmNCpwHQnrUC7csIUR7eq7MR/user-DVzP1er1Aa9264fuK7aVSD2A/img-uD3zuQS9GMdWkmoM8IheDqgL.png?st=2025-02-21T13%3A41%3A19Z&se=2025-02-21T15%3A41%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-21T00%3A23%3A28Z&ske=2025-02-22T00%3A23%3A28Z&sks=b&skv=2024-08-04&sig=O1ewLXje5OWVYfk%2BuSQhYM3M1YB2Vk5eaAJSBzHTx2Y%3D"
                 edited_image = download_edited_photo(response)
                 running = False
 
