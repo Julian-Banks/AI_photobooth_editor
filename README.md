@@ -12,7 +12,7 @@ Some example photos: [Example Photos](https://docs.google.com/document/d/1Bnb4FE
 AI Image Edit: 
 - Improve the prompt!!!
 - Use a higher quality image (using 512*512) 
-- Try a higher number of inferances (only tried with 1 and 3)
+- Try a higher number of inferences (only tried with 1 and 3)
 - Improve setting. Nice background and lighting ect.
 - Try different mask settings + try generate new mask for each photo?
 - Try find a different Image model.
@@ -20,6 +20,10 @@ AI Image Edit:
 Application:
 - Nicer window to display video stream.
 - More modern and sleek button to capture video.
-
+- Rework Script to be modular and pythonic
+ 
+Repo:
+- Add requirements.txt
+  
 # Documentation used: 
 - [OpenAI API image editing](https://platform.openai.com/docs/guides/images) 
