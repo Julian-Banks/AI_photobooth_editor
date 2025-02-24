@@ -1,6 +1,6 @@
 # Raspberry Pi Ai Photobooth
 
-**This is a basic Proof of Concept!!!** \ 
+**This is a basic Proof of Concept!!!**   
 The project is designed to use a Raspberry Pi and a PiCamera to create a fun photobooth!
 
 The script streams video from the PiCam to a PyGame window. When the user takes a photo (currently with a basic capture button but could be any input) the camera takes a photo. The OpenAI API for image editing is then used to send the photo, a mask, a prompt and some configuration. The API returns a URL that contains the edited image. The script then downloads the image and displays it for 10 seconds before quiting. 
