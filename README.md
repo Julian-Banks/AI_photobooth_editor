@@ -7,6 +7,16 @@ The script streams video from the PiCam to a PyGame window. When the user takes 
 
 Some example photos: [Example Photos](https://docs.google.com/document/d/1Bnb4FEQ76sIsDPlZo-fERJYLpB0Q9isZ0czeuLQ6R7w/edit?usp=sharing)
 
+## Setup
+python -m venv --system-site-packages env \ 
+This is necessary to include pre-installed packages like PiCamera2
+
+source env/bin/activate
+
+pip3 install openai
+
+export OPENAI_API_KEY="YOUR_API_KEY" //Sets the environment variable for your OPENAI_API_KEY
+
 ## Improvements 
 
 AI Image Edit: 
