@@ -37,7 +37,7 @@ def get_edited_photo():
     model = "dall-e-2",
     image = open("image.png", "rb"),
     mask  = open("mask.png", "rb"),
-    prompt= "A Superhero in a photobooth. They are strong and majestic, dressed in the coolest superhero outfit!", 
+    prompt= "A Superhero posing for a photo. They are strong and majestic, dressed in the coolest superhero outfit!", 
     n = 1,
     size = "512x512",
     )
